@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Multi", sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7b4397), to(#714488));
+  background: linear-gradient(to bottom, #7b4397, #714488);
+}
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search input {
+  padding: 0 0.8rem;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  outline: none;
+}
+
+.search button {
+  background-color: #dadada;
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.search button:focus {
+  outline: none;
+}
+
+.search.active input {
+  width: 200px;
+}
+
+.search.active button {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+/*# sourceMappingURL=style.css.map */
